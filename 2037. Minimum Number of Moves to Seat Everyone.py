@@ -1,4 +1,4 @@
-#2037git add .
+#2037
 class Solution:
     def minMovesToSeat(self, seats, students) -> int:
         seats.sort()
