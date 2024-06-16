@@ -12,5 +12,3 @@ class Solution:
                 l.append(i)
             i+=1
         return l
-
-        
