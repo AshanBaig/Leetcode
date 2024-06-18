@@ -1,0 +1,6 @@
+SYNTAXXXXXXX
+826  two list sort exactly is same order and give 2d list and typle 
+438  give dict of every character's frequency  like  'hello'=Counter({'l': 2, 'h': 1, 'e': 1, 'o': 1})  
+
+NEW_lOGIC
+633 arrange formula and check if it square or not  a2+b2=c  easy:a2=c-b2  just check c-b2==koe bhi square..

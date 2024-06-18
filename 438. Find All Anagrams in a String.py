@@ -4,6 +4,8 @@ class Solution:
         l=[]
         i=0
         p_counter=Counter(p)
+        
+        print(p_counter['h'])
         while True:
             if len(p)+i-1>=len(s):
                 break
@@ -12,3 +14,5 @@ class Solution:
                 l.append(i)
             i+=1
         return l
+s=Solution()
+s.findAnagrams('a','hello')
