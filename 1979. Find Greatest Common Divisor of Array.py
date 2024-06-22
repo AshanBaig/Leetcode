@@ -1,5 +1,5 @@
 class Solution:
-    def findGCD(self, nums: List[int]) -> int:
+    def findGCD(self, nums) -> int:
         def func_factors(n):
             factors=[]
             for i in range(1,n+1):
