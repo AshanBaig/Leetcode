@@ -1,0 +1,53 @@
+'''#problem 1
+class MyStr:
+    def __init__(self,s) :
+        self.s=s
+    def __add__(self,n):
+        return self.s+str(n)
+
+s=MyStr('Computer ')
+print(s+8) '''
+        
+#problem 2
+class Point:
+    def __init__(self,x=0,y=0) -> None:
+        self.x=x
+        self.y=y
+    def __str__(self) -> str:
+        return f'<{self.x},{self.y}>'
+    # def __add__(self,p):
+    #     return self.x+p.x,self.y+p.y
+    def __add__(self,p):
+        return Point(self.x+p.x,self.y+p.y)
+    def __iadd__(self,p):
+        self.x+=p.x
+        self.y+=p.y
+        return p1  #Asssignment opearator overloading always close with return object name other wise none will be return and assign to self/p1
+    def __neg__(self):
+        return -self.x,-self.y 
+p1=Point(2,3)
+p2=Point(4,5)
+print(p1+p2)
+p1+=p2 #Point.__iadd__(p1,p2) or p1.__iadd__(p2)
+print(-p1)   #Point.__neg__(p1) or p1.__neg__() 
+# a=p1+p2
+# print(type(a),a) #uncomment the code and check    
+class Line:
+    def __init__(self,p1=None,p2=None) -> None:
+        print(type(p1),type(p2))
+        if isinstance(p1,Point):
+            self.p1=p1
+        else:
+            self.p1=Point(0,0)
+        if isinstance(p2,Point):
+            self.p2=p2
+        else:
+            self.p2=Point(0,0)
+    def __invert__(self):
+        return f'{self.p2.x**2}'
+p1=Point(1,2)
+p2=Point(5,6)
+# l=Line(p1,p2)
+# print(~l)
+
+        
