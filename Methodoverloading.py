@@ -20,9 +20,9 @@ class Point:
     def __add__(self,p):
         return Point(self.x+p.x,self.y+p.y)
     def __iadd__(self,p):
-        self.x+=p.x
-        self.y+=p.y
-        return p1  #Asssignment opearator overloading always close with return object name other wise none will be return and assign to self/p1
+        # self.x+=p.x
+        # self.y+=p.y
+        return Point(self.x+p.x,self.y+p.y)  #Asssignment opearator overloading always close with return object name other wise none will be return and assign to self/p1
     def __neg__(self):
         return -self.x,-self.y 
 p1=Point(2,3)
@@ -49,5 +49,19 @@ p1=Point(1,2)
 p2=Point(5,6)
 # l=Line(p1,p2)
 # print(~l)
+
+from abc import ABC,abstractmethod
+from collections.abc import Container
+class odd():
+    # @classmethod
+    def c(cls):
+        return 'iam classs method'
+    def i(self):
+        return 'iam instance'
+    
+o=odd()
+print(odd.c(o))
+
+
 
         
