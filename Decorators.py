@@ -41,4 +41,4 @@ def deco(f):
 @deco
 def averege(a,b):
     return (a+b)/2
-averege(7,8.6)
+# averege(7,8.6)

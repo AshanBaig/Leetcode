@@ -9,5 +9,7 @@ class Exponenetial:
             return 'can not multiply'
         
 obj1=Exponenetial(2,3)
-obj2=Exponenetial(3,5)
+obj2=Exponenetial(2,5)
 print(obj1*obj2)
+
+ 

@@ -53,15 +53,36 @@ p2=Point(5,6)
 from abc import ABC,abstractmethod
 from collections.abc import Container
 class odd():
-    # @classmethod
+    @classmethod
     def c(cls):
         return 'iam classs method'
     def i(self):
         return 'iam instance'
     
 o=odd()
-print(odd.c(o))
+print(odd.i(o))  #if i call instance function with class name so i have to provide object(self)
+print(odd.c())  #if i call  clss method so no need of passing any argument bcz cls points to odd
+
+print(o.c())  #o is passing as cls(class name)
 
 
-
-        
+def decor1(f):
+    def inner():
+        x=f()
+        return x*x
+    return inner
+def decor(f):
+    def inner():
+        x=f()
+        return 2*x
+    return inner
+@decor1
+@decor
+def num():
+    return 10
+print(num())
+# @decor
+# @decor1
+# def num2():
+#     return 10
+# print(num2())
