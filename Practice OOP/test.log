@@ -1,9 +1,0 @@
-2024-07-07 14:24:56,111- INFO - this is info msg
-2024-07-07 14:24:56,111- CRITICAL - this is a critical msg
-2024-07-07 14:24:56,111- WARNING - this is warning msg
-2024-07-07 14:24:56,112- ERROR - this is error msg
-2024-07-07 14:26:01,632- INFO - this is info msg
-2024-07-07 14:26:01,632- CRITICAL - this is a critical msg
-2024-07-07 14:26:01,632- WARNING - this is warning msg
-2024-07-07 14:26:01,642- ERROR - this is error msg
-NoneType: None
