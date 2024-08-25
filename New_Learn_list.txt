@@ -4,3 +4,4 @@ SYNTAXXXXXXX
 
 NEW_lOGIC
 633 arrange formula and check if it square or not  a2+b2=c  easy:a2=c-b2  just check c-b2==koe bhi square..
+62 if you have to find combination of some rows and column like on checker board 
