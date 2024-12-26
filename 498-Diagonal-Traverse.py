@@ -1,7 +1,6 @@
 class Solution:
     def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
         ans=[]
-        turn=\up\
         row=0
         col=0
         while len(ans)!=len(mat)*(len(mat[0])):
@@ -31,7 +30,6 @@ class Solution:
                 row=len(mat)-1
             elif col<0:
                 col=0
-        print(ans)
         return ans
         
                 
